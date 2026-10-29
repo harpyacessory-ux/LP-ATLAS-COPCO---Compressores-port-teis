@@ -126,7 +126,11 @@ export const hero = {
 export const quote = {
   eyebrow: 'Solicite sua cotação',
   title: 'Fale com quem entende de compressores portáteis.',
+  /** Trecho do título em verde, na segunda linha (layout do mockup de 29/10). */
+  titleHighlight: 'compressores portáteis.',
   text: 'Descreva o serviço e a equipe indica a linha Atlas Copco adequada à sua operação. Preencha o formulário ou fale direto conosco pelo WhatsApp.',
+  /** Linha sob o botão de WhatsApp. */
+  help: 'Não sabe a vazão ou a pressão? Basta descrever o serviço.',
   trust: [
     { icon: 'users', label: 'Atendimento consultivo' },
     { icon: 'clock', label: 'Resposta rápida' },
@@ -137,7 +141,9 @@ export const quote = {
 } as const satisfies {
   eyebrow: string
   title: string
+  titleHighlight: string
   text: string
+  help: string
   trust: readonly [TrustItem, TrustItem, TrustItem]
   lgpd: string
 }

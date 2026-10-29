@@ -183,6 +183,12 @@ Também em 29/10/2026, a seção `diferenciais` passou ao layout do mockup: fras
 - Texto e 5º diferencial ("Orientação para encontrar a solução para sua operação.") vieram do mockup, na ficha e nos dados; ícones `user` (novo) e `zap`. Campo novo em `diferenciais.ts`: `help`. O campo `person` saiu da ficha e dos dados, e `pessoa.png` foi apagada.
 - **Foto provisória**: `cenario.jpg` é o técnico com tablet ao lado do compressor, recortado do mockup (904 px úteis, ampliado para 1400). O slot `diferenciais` continua em `assets.pendentes` até chegar a foto original.
 
+### Seção "Cotação" (estrutura fixa)
+
+Também em 29/10/2026, o visual da Cotação passou ao mockup, mantendo grid (1.05fr · 1fr), ordem, ritmo (`pt-8 pb-20`), fundo e as assinaturas que o `check:lp` confere: o formulário (shortcode) fica dentro de um card branco com a nota de LGPD embaixo; o título tem "compressores portáteis." em verde; o botão "Chamar no WhatsApp" (`cotacao-whatsapp`) passa a verde, contra a regra do padrão de deixá-lo navy para não competir com o envio do formulário; entra a linha "Não sabe a vazão ou a pressão? Basta descrever o serviço."; e os 3 selos ganham ícone maior e divisórias. Campos novos em `quote` (`content.ts`): `titleHighlight` e `help`. O ícone `whatsapp` ganhou o fone dentro do balão (vale também para o botão flutuante). O título fica menor que no mockup (2,5rem): o mockup usa uma coluna de texto mais larga que o container de 1320 px do padrão. O rodapé não mudou — o do mockup é o mesmo.
+
+Com as seções refeitas, os primitivos `Button`, `Eyebrow` e `SectionHeader` ficaram sem uso nesta LP. Eles continuam no projeto porque os componentes da biblioteca os importam: se a página for recomposta, voltam a ser usados.
+
 ## Dados não aplicados
 
 Segundo WhatsApp (31) 99710-0350; e-mail, LinkedIn, Instagram e QR code; razão social e CNPJ; controlador PRS / AirXpert; ferramentas e webshop da Atlas Copco; organograma APE; outras linhas da Safe Mine; ano de fundação (2017).
