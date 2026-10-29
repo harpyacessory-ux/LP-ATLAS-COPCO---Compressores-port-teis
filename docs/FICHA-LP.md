@@ -8,7 +8,7 @@ data: 2026-10-29
 site:
   brand: Safe Mine Soluções
   brandShort: Safe Mine
-  product: Compressor portátil Atlas Copco
+  product: Compressores portáteis Atlas Copco
   context: obras, mineração e perfuração
   url: https://lp-atlas-copco-compressores-portate.vercel.app/
   address: Rua José de Paula Filho, 128 - Europa, Contagem - MG, 32043-050
@@ -117,9 +117,9 @@ conteudo:
   title: Compressor portátil Atlas Copco para obras e mineração | Safe Mine
   description: Compressores portáteis Atlas Copco a diesel e elétricos WEG, de 100 a 1.567 CFM, para perfuração, jateamento e obras, com atendimento consultivo.
   hero:
-    eyebrow: Ar comprimido portátil
-    title: Compressor portátil Atlas Copco para obras, mineração e perfuração
-    text: Linhas Small, Medium e Large Air a diesel e modelos elétricos WEG, com atendimento consultivo para indicar o compressor certo para o seu serviço.
+    eyebrow: Ar comprimido para operações exigentes
+    title: Compressores portáteis Atlas Copco para obras, mineração e perfuração
+    text: Modelos a diesel e elétricos para diferentes vazões, pressões e aplicações. A Safe Mine ajuda você a escolher o compressor para o seu serviço.
     points:
       - icon: power
         line1: Versões a diesel
@@ -383,7 +383,7 @@ blocos:
     falta: a oferta é uma linha de equipamentos, não a consolidação de compras de itens diferentes
 
 assets:
-  pendentes: [heroBg, linhas, aplicacoes, diferenciais]
+  pendentes: [linhas, aplicacoes, diferenciais]
 
 conflitos:
   - pede: formulário próprio com aplicação, vazão em CFM, pressão em bar, diesel/elétrico e linha, com pré-seleção da família pelos cards
@@ -410,6 +410,10 @@ conflitos:
   - pede: visual padrão da agência (o briefing não traz hex)
     regra: uma LP por cliente segue as cores do cliente quando conhecidas
     entrou: os mesmos tokens da LP SEIVE da Safe Mine (azul #163b99 / navy #102c73, ação verde #4d7f22), tirados do CSS do site do cliente
+
+  - pede: header e hero do mockup aprovado em 29/10/2026 (barra flutuante, banner em largura total, faixa de linhas no hero, sem a coluna do chat)
+    regra: Header e Hero são estrutura fixa do padrão (4.1.1 e 4.1.2)
+    entrou: o layout do mockup, como desvio desta LP; os 3 pontos do hero ficam na ficha (o validador exige) mas a página mostra no lugar a faixa das 4 linhas; o shortcode do chat não é renderizado
 
 naoAplicado:
   - telefone (31) 99553-8843 (vai só como WhatsApp) e segundo número (31) 99710-0350

@@ -7,12 +7,8 @@ export const site = {
   brand: 'Safe Mine Soluções',
   /** Nome curto usado em frases como "Por que a …" (entrada 2). */
   brandShort: 'Safe Mine',
-  /**
-   * Produto principal (entrada 3). Vai na tagline do header e no H1. No singular de
-   * propósito: é a palavra-chave literal, e o `check:lp` não reconhece "portáteis"
-   * como plural de "portátil".
-   */
-  product: 'Compressor portátil Atlas Copco',
+  /** Produto principal, no plural (entrada 3). Vai na tagline do header e no H1. */
+  product: 'Compressores portáteis Atlas Copco',
   /** Contexto de uso (entrada 4). Completa o H1 e o title. */
   context: 'obras, mineração e perfuração',
   /** URL absoluta da página no ar (entrada 10). Usada em canonical e og:url. Domínio de produção da Vercel; a final depende da hospedagem. */

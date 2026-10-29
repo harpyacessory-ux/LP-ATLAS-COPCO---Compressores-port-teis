@@ -16,10 +16,14 @@ import heroBg from '@assets/heroBg.png'
 
 /* ------------------------------------------------------------------ tipos */
 
-export interface HeroPoint {
+/** Linha da faixa "Encontre a linha" no pé do hero. Cada card é um CTA. */
+export interface HeroLine {
+  id: string
   icon: IconName
-  line1: string
-  line2: string
+  title: string
+  /** Dado de destaque sob o título; mais de um item entra separado por divisória. */
+  spec: readonly string[]
+  description: string
 }
 
 export interface TrustItem {
@@ -31,11 +35,13 @@ export interface TrustItem {
 
 /** Vocabulário fixo de CTA (PROMPT-PADRAO-LP, item 8). Não variar. */
 export const cta = {
-  primary: 'Solicite sua cotação',
+  primary: 'Solicitar cotação',
   primaryShort: 'Cotação',
   secondary: 'Identifique seu compressor',
   card: 'Falar com especialista',
   whatsapp: 'Chamar no WhatsApp',
+  /** Link do hero que rola até a seção de linhas. Não é CTA de atendimento. */
+  findLine: 'Encontrar minha linha',
 } as const
 
 /* ------------------------------------------------------------------ header */
@@ -47,24 +53,62 @@ export const header = {
 /* -------------------------------------------------------------------- hero */
 
 export const hero = {
-  eyebrow: 'Ar comprimido portátil',
+  eyebrow: 'Ar comprimido para operações exigentes',
   title: `${site.product} para ${site.context}`,
-  text: 'Linhas Small, Medium e Large Air a diesel e modelos elétricos WEG, com atendimento consultivo para indicar o compressor certo para o seu serviço.',
+  text: 'Modelos a diesel e elétricos para diferentes vazões, pressões e aplicações. A Safe Mine ajuda você a escolher o compressor para o seu serviço.',
   banner: {
     src: heroBg,
-    alt: 'Compressor portátil Atlas Copco em operação de campo',
+    alt: 'Compressores portáteis Atlas Copco em área de mineração',
   },
-  points: [
-    { icon: 'power', line1: 'Versões a diesel', line2: 'e elétricas WEG' },
-    { icon: 'gear', line1: 'De 100 a 1.567 CFM', line2: 'e até 30 bar' },
-    { icon: 'mountain', line1: 'Para perfuração,', line2: 'jateamento e obras' },
-  ],
+  help: {
+    title: 'Não sabe a vazão ou a pressão?',
+    text: 'Descreva o serviço. Nós ajudamos na seleção.',
+  },
+  lines: {
+    title: 'Encontre a linha para a sua aplicação',
+    note: 'Vazão e pressão variam conforme o modelo e a configuração.',
+    items: [
+      {
+        id: 'small-air',
+        icon: 'road',
+        title: 'Small Air',
+        spec: ['100 a 190 CFM'],
+        description: 'Sinalização rodoviária, demolição e perfuração manual.',
+      },
+      {
+        id: 'medium-air',
+        icon: 'blast',
+        title: 'Medium Air',
+        spec: ['Versatilidade por aplicação'],
+        description: 'Jateamento abrasivo, concreto projetado e perfuração de rocha.',
+      },
+      {
+        id: 'large-air',
+        icon: 'drill',
+        title: 'Large Air',
+        spec: ['Até 1.567 CFM', 'até 30 bar'],
+        description: 'Poços artesianos, fundações e geotecnia.',
+      },
+      {
+        id: 'eletricos',
+        icon: 'plug',
+        title: 'Linha elétrica',
+        spec: ['Motor WEG'],
+        description: 'Para operações com alimentação elétrica disponível.',
+      },
+    ],
+  },
 } as const satisfies {
   eyebrow: string
   title: string
   text: string
   banner: Photo
-  points: readonly [HeroPoint, HeroPoint, HeroPoint]
+  help: { title: string; text: string }
+  lines: {
+    title: string
+    note: string
+    items: readonly [HeroLine, HeroLine, HeroLine, HeroLine]
+  }
 }
 
 /* ----------------------------------------------------------------- cotação */

@@ -1,6 +1,6 @@
 {
   "ficha": 1,
-  "gerado": "2026-10-29T14:44:33.728Z",
+  "gerado": "2026-10-29T15:20:05.463Z",
   "origem": "docs/FICHA-LP.md",
   "padrao": "2.8.0",
   "cliente": "Safe Mine Soluções",
@@ -9,7 +9,7 @@
   "site": {
     "brand": "Safe Mine Soluções",
     "brandShort": "Safe Mine",
-    "product": "Compressor portátil Atlas Copco",
+    "product": "Compressores portáteis Atlas Copco",
     "context": "obras, mineração e perfuração",
     "url": "https://lp-atlas-copco-compressores-portate.vercel.app/",
     "address": "Rua José de Paula Filho, 128 - Europa, Contagem - MG, 32043-050",
@@ -131,9 +131,9 @@
     "title": "Compressor portátil Atlas Copco para obras e mineração | Safe Mine",
     "description": "Compressores portáteis Atlas Copco a diesel e elétricos WEG, de 100 a 1.567 CFM, para perfuração, jateamento e obras, com atendimento consultivo.",
     "hero": {
-      "eyebrow": "Ar comprimido portátil",
-      "title": "Compressor portátil Atlas Copco para obras, mineração e perfuração",
-      "text": "Linhas Small, Medium e Large Air a diesel e modelos elétricos WEG, com atendimento consultivo para indicar o compressor certo para o seu serviço.",
+      "eyebrow": "Ar comprimido para operações exigentes",
+      "title": "Compressores portáteis Atlas Copco para obras, mineração e perfuração",
+      "text": "Modelos a diesel e elétricos para diferentes vazões, pressões e aplicações. A Safe Mine ajuda você a escolher o compressor para o seu serviço.",
       "points": [
         {
           "icon": "power",
@@ -338,7 +338,7 @@
     }
   },
   "assets": {
-    "pendentes": ["heroBg", "linhas", "aplicacoes", "diferenciais"]
+    "pendentes": ["linhas", "aplicacoes", "diferenciais"]
   },
   "fora": {
     "especificacoes": {

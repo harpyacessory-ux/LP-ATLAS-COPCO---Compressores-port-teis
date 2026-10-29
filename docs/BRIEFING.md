@@ -80,30 +80,30 @@ Derivada em: 29/10/2026 · comando aplicado: `npm run compose -- linhas identifi
 
 ## Entradas do núcleo
 
-| #   | Entrada                 | Valor                                                                                                    | Origem                              |
-| --- | ----------------------- | -------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| 1   | MARCA                   | Safe Mine Soluções                                                                                       | planejamento integrado              |
-| 2   | MARCA_CURTA             | Safe Mine                                                                                                | apresentação                        |
-| 3   | PRODUTO_PRINCIPAL       | Compressor portátil Atlas Copco                                                                          | ajustado à palavra-chave (singular) |
-| 4   | CONTEXTO_DE_USO         | obras, mineração e perfuração                                                                            | H1 sugerido no briefing             |
-| 5   | PUBLICO                 | Manutenção, Operações, Engenharia, Compras                                                               | brief da página                     |
-| 6   | HERO                    | Versões a diesel e elétricas WEG · De 100 a 1.567 CFM e até 30 bar · Para perfuração, jateamento e obras | briefing                            |
-| 7   | MARCAS_ATENDIDAS        | Atlas Copco, só por extenso                                                                              | logo sem autorização                |
-| 8   | SELOS_DE_CONFIANCA      | Atendimento consultivo · Resposta rápida · Cotação pela descrição do serviço                             | apresentação + briefing             |
-| 9   | ENDERECO                | Rua José de Paula Filho, 128 - Europa, Contagem - MG, 32043-050                                          | informado no chat                   |
-| 10  | URL_FINAL + PRIVACIDADE | `https://lp-atlas-copco-compressores-portate.vercel.app/` (provisória); sem política                     | pendência                           |
-| 11  | SHORTCODES              | `[atendimento_chat id="default"]` · `[atendimento_form id="default-form"]`                               | default do padrão                   |
-| 12  | WHATSAPP                | 5531995538843                                                                                            | planejamento integrado              |
-| 13  | STACK + PUBLICACAO      | Astro, `main` → `wp-build`                                                                               | default do padrão                   |
-| 14  | TOKENS_DE_COR + FONTE   | azul #163b99 (navy #102c73), verde #7ba249 escurecido para #4d7f22; Manrope                              | os mesmos da LP SEIVE (CSS do site) |
-| 15  | CAMPANHA                | `compressor portátil atlas copco`                                                                        | briefing de campanha                |
+| #   | Entrada                 | Valor                                                                                                | Origem                              |
+| --- | ----------------------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| 1   | MARCA                   | Safe Mine Soluções                                                                                   | planejamento integrado              |
+| 2   | MARCA_CURTA             | Safe Mine                                                                                            | apresentação                        |
+| 3   | PRODUTO_PRINCIPAL       | Compressores portáteis Atlas Copco                                                                   | mockup do topo (29/10)              |
+| 4   | CONTEXTO_DE_USO         | obras, mineração e perfuração                                                                        | H1 sugerido no briefing             |
+| 5   | PUBLICO                 | Manutenção, Operações, Engenharia, Compras                                                           | brief da página                     |
+| 6   | HERO                    | na ficha: diesel/elétrico WEG · 100–1.567 CFM e 30 bar · aplicações; na página, a faixa das 4 linhas | briefing + mockup do topo           |
+| 7   | MARCAS_ATENDIDAS        | Atlas Copco, só por extenso                                                                          | logo sem autorização                |
+| 8   | SELOS_DE_CONFIANCA      | Atendimento consultivo · Resposta rápida · Cotação pela descrição do serviço                         | apresentação + briefing             |
+| 9   | ENDERECO                | Rua José de Paula Filho, 128 - Europa, Contagem - MG, 32043-050                                      | informado no chat                   |
+| 10  | URL_FINAL + PRIVACIDADE | `https://lp-atlas-copco-compressores-portate.vercel.app/` (provisória); sem política                 | pendência                           |
+| 11  | SHORTCODES              | `[atendimento_chat id="default"]` · `[atendimento_form id="default-form"]`                           | default do padrão                   |
+| 12  | WHATSAPP                | 5531995538843                                                                                        | planejamento integrado              |
+| 13  | STACK + PUBLICACAO      | Astro, `main` → `wp-build`                                                                           | default do padrão                   |
+| 14  | TOKENS_DE_COR + FONTE   | azul #163b99 (navy #102c73), verde #7ba249 escurecido para #4d7f22; Manrope                          | os mesmos da LP SEIVE (CSS do site) |
+| 15  | CAMPANHA                | `compressor portátil atlas copco`                                                                    | briefing de campanha                |
 
 ## Assets
 
-| Asset          | Arquivo esperado        | Especificação               | Status                                             |
-| -------------- | ----------------------- | --------------------------- | -------------------------------------------------- |
-| Logo           | `src/assets/LOGO.png`   | 240×200, fundo transparente | entregue — o mesmo da LP SEIVE (site da Safe Mine) |
-| Banner do hero | `src/assets/heroBg.png` | 1981×900, brief 4.1.3       | **pendente**                                       |
+| Asset          | Arquivo esperado        | Especificação               | Status                                                                   |
+| -------------- | ----------------------- | --------------------------- | ------------------------------------------------------------------------ |
+| Logo           | `src/assets/LOGO.png`   | 240×200, fundo transparente | entregue — o mesmo da LP SEIVE (site da Safe Mine); usado no og:image    |
+| Banner do hero | `src/assets/heroBg.png` | 1981×891                    | entregue em 29/10 com o mockup (1870×841, ampliado para 1981 de largura) |
 
 | Asset                       | Arquivo esperado                             | Especificação                 | Status                                     |
 | --------------------------- | -------------------------------------------- | ----------------------------- | ------------------------------------------ |
@@ -119,16 +119,29 @@ As fotos de produto e de aplicação citadas no briefing estão no PPT "Atlas Co
 
 ## Conflitos com o padrão
 
-| O que o material pedia                                           | Regra do padrão                                 | O que entrou no lugar                                                          |
-| ---------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------ |
-| Formulário próprio (aplicação, CFM, bar, diesel/elétrico, linha) | só shortcode do plugin                          | shortcodes padrão; os campos viraram o painel "Não sabe a vazão ou a pressão?" |
-| CTAs próprios ("Cotar Small", "Consultar elétricos"…)            | vocabulário de CTA fixo                         | CTAs do padrão; `data-cta` por linha separa Small, Medium, Large e elétricos   |
-| Logo da Atlas Copco                                              | logo de terceiro só com autorização             | nome por extenso; carrossel de marcas vazio                                    |
-| Porte da X-AIR divergente entre as fontes                        | não inventar fato                               | classificação da fabricante (Medium Air)                                       |
-| H185/H250/H450 como elétricos, com motor Kubota/Perkins          | não inventar fato                               | fora da página até a confirmação                                               |
-| Cobertura nacional do site atual                                 | claim proibido no planejamento                  | nenhuma área declarada                                                         |
-| Title no formato padrão (92 caracteres)                          | title ≤ 70 caracteres                           | "Compressor portátil Atlas Copco para obras e mineração \| Safe Mine"          |
-| H1 no plural ("Compressores portáteis…")                         | palavra-chave no H1, verificada pelo `check:lp` | H1 no singular — o verificador não casa "portáteis" com "portátil"             |
+| O que o material pedia                                           | Regra do padrão                                  | O que entrou no lugar                                                          |
+| ---------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------ |
+| Formulário próprio (aplicação, CFM, bar, diesel/elétrico, linha) | só shortcode do plugin                           | shortcodes padrão; os campos viraram o painel "Não sabe a vazão ou a pressão?" |
+| CTAs próprios ("Cotar Small", "Consultar elétricos"…)            | vocabulário de CTA fixo                          | CTAs do padrão; `data-cta` por linha separa Small, Medium, Large e elétricos   |
+| Logo da Atlas Copco                                              | logo de terceiro só com autorização              | nome por extenso; carrossel de marcas vazio                                    |
+| Porte da X-AIR divergente entre as fontes                        | não inventar fato                                | classificação da fabricante (Medium Air)                                       |
+| H185/H250/H450 como elétricos, com motor Kubota/Perkins          | não inventar fato                                | fora da página até a confirmação                                               |
+| Cobertura nacional do site atual                                 | claim proibido no planejamento                   | nenhuma área declarada                                                         |
+| Title no formato padrão (92 caracteres)                          | title ≤ 70 caracteres                            | "Compressor portátil Atlas Copco para obras e mineração \| Safe Mine"          |
+| Header e Hero do mockup aprovado em 29/10/2026                   | Header e Hero são estrutura fixa (4.1.1 e 4.1.2) | o layout do mockup, como desvio desta LP — ver "Desvio de estrutura fixa"      |
+
+## Desvio de estrutura fixa — Header e Hero
+
+Em 29/10/2026 o topo da página foi refeito a partir do mockup enviado pela B2, no lugar do Header e do Hero do padrão (itens 4.1.1 e 4.1.2):
+
+- **Header**: barra flutuante translúcida e fixa, com logo claro (`LOGO-light.png`), tagline central a partir de 1024 px e CTA verde "Solicitar cotação". A placa branca do logo saiu.
+- **Hero**: banner em largura total ancorado à direita, com fundo navy #002146 (a cor do lado esquerdo do banner); H1 no plural; link "Encontrar minha linha" que rola até `#linhas` (`data-cta="hero-secondary"`); bloco "Não sabe a vazão ou a pressão?"; e a faixa "Encontre a linha para a sua aplicação", com um card-CTA por linha (`hero-linha-small-air`, `hero-linha-medium-air`, `hero-linha-large-air`, `hero-linha-eletricos`).
+- **Sem a coluna de 300 px do chat**: o shortcode do chat continua em `site.ts` e no `index.astro` gerado, mas o Hero não o renderiza. O formulário segue na Cotação.
+- **CTA primário** passa a "Solicitar cotação" em toda a página (era "Solicite sua cotação").
+- **`check:lp`**: as assinaturas de Header e Hero (A8) foram trocadas pelas da estrutura nova, para a verificação continuar valendo.
+- Os 3 pontos do hero ficam na ficha (o validador exige), mas a página mostra no lugar a faixa das 4 linhas.
+
+Se este topo virar padrão, a mudança é no starter (template + `check-lp.mjs`), com versão nova.
 
 ## Dados não aplicados
 
@@ -137,8 +150,8 @@ Segundo WhatsApp (31) 99710-0350; e-mail, LinkedIn, Instagram e QR code; razão 
 ## Desvios técnicos da execução
 
 - `npm run screens` não roda nesta pasta: o script monta o comando com `shell: true` e o caminho tem espaços (mesmo defeito registrado na LP SEIVE). As capturas foram feitas com os mesmos parâmetros (porta 4873, Playwright 1.58.2, `?screens=1` e `?grid=1`), com caminho relativo.
-- `scripts/lib/keyword.mjs` não trata o plural -il → -eis ("portátil" → "portáteis"). Correção a levar para o starter, com caso novo no `keyword.test.mjs`.
-- A LP foi criada com `new-lp.mjs --no-install --no-git` numa pasta temporária e movida para esta pasta; `npm install` rodou aqui. O `git init -b main` e o commit inicial não foram feitos.
+- `scripts/lib/keyword.mjs` não tratava o plural -il → -eis ("portátil" → "portáteis"). Corrigido nesta LP (regra `['eis', 'il']`) para o H1 no plural do mockup; levar para o starter, com caso novo no `keyword.test.mjs`.
+- A LP foi criada com `new-lp.mjs --no-install --no-git` numa pasta temporária e movida para esta pasta; `npm install`, `git init -b main` e o commit inicial rodaram aqui. Repositório: github.com/harpyacessory-ux/LP-ATLAS-COPCO---Compressores-port-teis; publicação de revisão na Vercel (projeto `lp-atlas-copco-compressores-portateis`) pela CLI.
 
 ## Estado da entrega
 

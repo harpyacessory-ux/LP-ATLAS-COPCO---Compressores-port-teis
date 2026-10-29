@@ -38,6 +38,8 @@ const PLURAIS = [
   ['aes', 'ao'],
   ['ais', 'al'],
   ['eis', 'el'],
+  // portáteis → portátil, fáceis → fácil: paroxítonas em -il fazem o plural em -eis.
+  ['eis', 'il'],
   ['ois', 'ol'],
   ['uis', 'ul'],
   ['ns', 'm'],
