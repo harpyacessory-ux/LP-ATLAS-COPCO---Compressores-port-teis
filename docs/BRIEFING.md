@@ -91,7 +91,7 @@ Derivada em: 29/10/2026 · comando aplicado: `npm run compose -- linhas identifi
 | 7   | MARCAS_ATENDIDAS        | Atlas Copco, só por extenso                                                                              | logo sem autorização                |
 | 8   | SELOS_DE_CONFIANCA      | Atendimento consultivo · Resposta rápida · Cotação pela descrição do serviço                             | apresentação + briefing             |
 | 9   | ENDERECO                | Rua José de Paula Filho, 128 - Europa, Contagem - MG, 32043-050                                          | informado no chat                   |
-| 10  | URL_FINAL + PRIVACIDADE | `https://lp-atlas-copco-compressores-portateis.vercel.app/` (provisória); sem política                   | pendência                           |
+| 10  | URL_FINAL + PRIVACIDADE | `https://lp-atlas-copco-compressores-portate.vercel.app/` (provisória); sem política                     | pendência                           |
 | 11  | SHORTCODES              | `[atendimento_chat id="default"]` · `[atendimento_form id="default-form"]`                               | default do padrão                   |
 | 12  | WHATSAPP                | 5531995538843                                                                                            | planejamento integrado              |
 | 13  | STACK + PUBLICACAO      | Astro, `main` → `wp-build`                                                                               | default do padrão                   |

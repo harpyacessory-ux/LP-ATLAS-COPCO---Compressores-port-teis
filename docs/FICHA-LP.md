@@ -10,7 +10,7 @@ site:
   brandShort: Safe Mine
   product: Compressor portátil Atlas Copco
   context: obras, mineração e perfuração
-  url: https://lp-atlas-copco-compressores-portateis.vercel.app/
+  url: https://lp-atlas-copco-compressores-portate.vercel.app/
   address: Rua José de Paula Filho, 128 - Europa, Contagem - MG, 32043-050
   privacyUrl: ''
   whatsapp: '5531995538843'

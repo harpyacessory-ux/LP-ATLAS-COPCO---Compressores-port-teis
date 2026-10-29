@@ -15,8 +15,8 @@ export const site = {
   product: 'Compressor portátil Atlas Copco',
   /** Contexto de uso (entrada 4). Completa o H1 e o title. */
   context: 'obras, mineração e perfuração',
-  /** URL absoluta da página no ar (entrada 10). Usada em canonical e og:url. Provisória. */
-  url: 'https://lp-atlas-copco-compressores-portateis.vercel.app/',
+  /** URL absoluta da página no ar (entrada 10). Usada em canonical e og:url. Domínio de produção da Vercel; a final depende da hospedagem. */
+  url: 'https://lp-atlas-copco-compressores-portate.vercel.app/',
   /** Endereço completo com CEP (entrada 9). Footer e JSON-LD. */
   address: 'Rua José de Paula Filho, 128 - Europa, Contagem - MG, 32043-050',
   /** Link da política de privacidade do cliente (entrada 10). Vazio esconde o link, mas a nota de LGPD continua. */
