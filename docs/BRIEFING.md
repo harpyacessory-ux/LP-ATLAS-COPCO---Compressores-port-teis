@@ -106,15 +106,15 @@ Derivada em: 29/10/2026 · comando aplicado: `npm run compose -- linhas identifi
 | Logo da barra | `src/assets/marca-safe-mine.png` | 841×180, fundo transparente | recortado do logo do site da Safe Mine (8000×2081)                    |
 | Foto do hero  | `src/assets/heroBg.png`          | 1020×721 (card)             | recorte do banner entregue em 29/10 com o mockup                      |
 
-| Asset                    | Arquivo esperado                             | Especificação                 | Status                                     |
-| ------------------------ | -------------------------------------------- | ----------------------------- | ------------------------------------------ |
-| Small Air                | `src/assets/linhas/linha-1.png`              | PNG 800×600 recortado         | provisória — recorte do mockup             |
-| Medium Air               | `src/assets/linhas/linha-2.png`              | PNG 800×600 recortado         | provisória — recorte do mockup             |
-| Large Air                | `src/assets/linhas/linha-3.png`              | PNG 800×600 recortado         | provisória — recorte do mockup             |
-| Elétricos WEG            | `src/assets/linhas/marcas.png`               | 800×600, fundo branco         | provisória — recorte do mockup             |
-| Aplicações 1–4           | `src/assets/aplicacoes/aplicacao-{1..4}.png` | 1200×900 (4:3)                | **pendentes** — direito de uso a confirmar |
-| Cenário dos diferenciais | `src/assets/diferenciais/cenario.jpg`        | 1600×900                      | **pendente**                               |
-| Pessoa dos diferenciais  | `src/assets/diferenciais/pessoa.png`         | 1220×1000, fundo transparente | **pendente**                               |
+| Asset                    | Arquivo esperado                             | Especificação                 | Status                                                      |
+| ------------------------ | -------------------------------------------- | ----------------------------- | ----------------------------------------------------------- |
+| Small Air                | `src/assets/linhas/linha-1.png`              | PNG 800×600 recortado         | provisória — recorte do mockup                              |
+| Medium Air               | `src/assets/linhas/linha-2.png`              | PNG 800×600 recortado         | provisória — recorte do mockup                              |
+| Large Air                | `src/assets/linhas/linha-3.png`              | PNG 800×600 recortado         | provisória — recorte do mockup                              |
+| Elétricos WEG            | `src/assets/linhas/marcas.png`               | 800×600, fundo branco         | provisória — recorte do mockup                              |
+| Aplicações 1–4           | `src/assets/aplicacoes/aplicacao-{1..4}.png` | 1200×900 (4:3)                | provisórias — recorte do mockup; direito de uso a confirmar |
+| Cenário dos diferenciais | `src/assets/diferenciais/cenario.jpg`        | 1600×900                      | **pendente**                                                |
+| Pessoa dos diferenciais  | `src/assets/diferenciais/pessoa.png`         | 1220×1000, fundo transparente | **pendente**                                                |
 
 As fotos de produto e de aplicação citadas no briefing estão no PPT "Atlas Copco – APE", que não está nesta máquina; a maioria dos recortes ficava abaixo da resolução pedida.
 
@@ -163,6 +163,14 @@ Também em 29/10/2026, o painel passou ao layout do mockup: card dividido, com b
 - Texto, reforço e itens foram atualizados na ficha e nos dados. O reforço do mockup ("Você pode pedir cotação sem ter os dados técnicos.") tem 50 caracteres e o contrato da seção aceita 48: entrou "Você pode pedir cotação sem os dados técnicos.".
 - Campos novos em `identificar.ts`, fora da ficha: `ctaLabel` e `list` (título, texto, rótulo do grupo opcional e o índice em que ele começa).
 - Ícones `file` e `pin` no lugar de `file-text` e `map-pin`: o validador da ficha só reconhece nomes de ícone sem hífen.
+
+### Seção "Aplicações"
+
+Também em 29/10/2026, a seção `aplicacoes` passou ao layout do mockup: cabeçalho em duas colunas com "cada serviço de campo" em verde; 4 cards brancos com foto, descrição nova e a chamada "Cotar para esta aplicação" (o card inteiro continua sendo o botão, `aplicacoes-{id}`); e a faixa "Sua aplicação não está aqui?" com o botão "Falar com especialista" (`aplicacoes-outra`). 4 colunas a partir de 1280 px; 2 abaixo disso.
+
+- O componente `src/components/sections/ApplicationsGallery.astro` foi alterado dentro da LP. **`npm run compose` o sobrescreve com o da biblioteca** — guarde-o antes de recompor.
+- As 4 descrições vieram do mockup, na ficha e nos dados. Campos novos em `aplicacoes.ts`: `titleHighlight`, `cardCta` e `help`.
+- **Fotos provisórias**: as 4 fotos de aplicação foram recortadas do mockup (cerca de 400 px de largura útil, ampliadas para 800×600). O slot `aplicacoes` continua em `assets.pendentes` até chegarem as fotos reais 1200×900, com o direito de uso confirmado.
 
 ## Dados não aplicados
 

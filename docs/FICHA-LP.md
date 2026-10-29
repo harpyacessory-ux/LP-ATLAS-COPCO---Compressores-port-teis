@@ -304,19 +304,19 @@ blocos:
     items:
       - id: desmonte-de-rocha
         label: Desmonte de rocha
-        description: Aciona perfuratrizes em rochas, pedras ornamentais, obras e mineração.
+        description: Ar comprimido para perfuração em rochas, pedreiras e mineração.
         photo: Perfuração de rocha para desmonte
       - id: jateamento
         label: Jateamento abrasivo
-        description: Acelera o abrasivo para remover corrosão, tinta e contaminantes.
+        description: Para remover corrosão, tinta e contaminantes de superfícies.
         photo: Jateamento abrasivo em superfície metálica
       - id: pocos-artesianos
         label: Poços artesianos
-        description: Aciona o martelo de fundo e limpa o furo até a captação de água.
+        description: Ar para perfuração e limpeza do furo até a captação de água.
         photo: Perfuração de poço artesiano
       - id: fundacoes
         label: Fundações
-        description: Avança a ferramenta e limpa o furo para estacas e ancoragens.
+        description: Perfuração e limpeza de furos para estacas e ancoragens.
         photo: Perfuração para fundações e estacas
 
   segmentos:
