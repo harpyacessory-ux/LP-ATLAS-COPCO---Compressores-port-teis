@@ -125,3 +125,21 @@ const hasHighlight = quote.title.includes(quote.titleHighlight)
     </div>
   </div>
 </section>
+
+<style>
+  /* Base arredondada sobre o rodapé, que sobe por baixo dela (ver Footer.astro). Por CSS,
+     e não por classe, para não mexer nas assinaturas que o check:lp confere. */
+  #cotacao {
+    position: relative;
+    z-index: 1;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+
+  @media (min-width: 640px) {
+    #cotacao {
+      border-bottom-left-radius: 3rem;
+      border-bottom-right-radius: 3rem;
+    }
+  }
+</style>

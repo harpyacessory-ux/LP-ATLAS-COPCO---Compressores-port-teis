@@ -34,3 +34,19 @@ const year = new Date().getFullYear()
     </p>
   </div>
 </footer>
+
+<style>
+  /* Sobe por baixo da base arredondada da Cotação, para o navy preencher as quinas; o
+     padding compensa. Por CSS para não mexer na assinatura da estrutura fixa. */
+  footer {
+    margin-top: -2rem;
+    padding-top: 2rem;
+  }
+
+  @media (min-width: 640px) {
+    footer {
+      margin-top: -3rem;
+      padding-top: 3rem;
+    }
+  }
+</style>

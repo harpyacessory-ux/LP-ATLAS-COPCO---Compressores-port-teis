@@ -189,6 +189,10 @@ Também em 29/10/2026, o visual da Cotação passou ao mockup, mantendo grid (1.
 
 Com as seções refeitas, os primitivos `Button`, `Eyebrow` e `SectionHeader` ficaram sem uso nesta LP. Eles continuam no projeto porque os componentes da biblioteca os importam: se a página for recomposta, voltam a ser usados.
 
+### Quinas arredondadas nas trocas de fundo
+
+Onde o fundo muda, a quina é arredondada (2rem no celular, 3rem a partir de 640 px): a base do topo sobre a seção de linhas, o início do bloco cinza em `aplicacoes` e a base da Cotação sobre o rodapé. Na Cotação e no rodapé (estrutura fixa) o arredondamento é feito por CSS escopado — `#cotacao` acima e o `footer` subindo por baixo dela com margem negativa e o mesmo padding de compensação —, para não mexer nos trechos de classe que o `check:lp` confere.
+
 ## Dados não aplicados
 
 Segundo WhatsApp (31) 99710-0350; e-mail, LinkedIn, Instagram e QR code; razão social e CNPJ; controlador PRS / AirXpert; ferramentas e webshop da Atlas Copco; organograma APE; outras linhas da Safe Mine; ano de fundação (2017).
