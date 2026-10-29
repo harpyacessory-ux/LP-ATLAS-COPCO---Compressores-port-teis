@@ -97,6 +97,7 @@ export const iconPaths = {
   drill:
     '<path d="M12 3 7.2 20.5M12 3l4.8 17.5"/><path d="M10.6 8.2h2.8M9.4 12.6h5.2M8.2 17h7.6"/><path d="M4.5 20.5h15"/>',
   plug: '<path d="M9 3.5v4M15 3.5v4"/><path d="M6.5 7.5h11v3a5.5 5.5 0 0 1-11 0v-3Z"/><path d="M12 16v4.5"/>',
+  user: '<circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c.8-3.9 3.8-6 7.5-6s6.7 2.1 7.5 6"/>',
   engine:
     '<path d="M9.5 5.5h5M12 5.5v2"/><rect x="7" y="7.5" width="10" height="9.5" rx="1.5"/><path d="M7 10.5H4.5v4H7M17 10h2.5v4.5H17"/><path d="M2.5 12.5h2M9.5 10.5h5M9.5 14h5"/>',
 } as const satisfies Record<string, string>

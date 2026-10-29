@@ -358,17 +358,16 @@ blocos:
     papeis: [Operações, Manutenção, Compras]
     eyebrow: Diferenciais Safe Mine
     titleLines: [Ar certo para, cada aplicação.]
-    text: A Safe Mine entende o serviço antes de indicar o compressor, avaliando juntos vazão, pressão, motor e aplicação.
-    scene: Compressor portátil em operação de campo
-    person: Especialista da Safe Mine
+    text: A Safe Mine entende o serviço antes de indicar o compressor, avaliando vazão, pressão, motor e aplicação.
+    scene: Técnico com tablet ao lado de um compressor portátil Atlas Copco
     reasons:
-      - icon: search
+      - icon: user
         title: Atendimento consultivo
         description: Entende a aplicação antes de indicar o compressor.
       - icon: truck
         title: Mobilidade em campo
         description: Fornecimento móvel de ar para serviços de campo.
-      - icon: power
+      - icon: zap
         title: Diesel ou elétrico
         description: Versões a diesel e modelos elétricos com motor WEG.
       - icon: layers
@@ -376,7 +375,7 @@ blocos:
         description: Small, Medium e Large Air, de 100 a 1.567 CFM.
       - icon: clock
         title: Agilidade na identificação
-        description: Resposta rápida aos desafios da operação.
+        description: Orientação para encontrar a solução para sua operação.
 
   escopo:
     veredicto: nao-se-aplica

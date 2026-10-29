@@ -106,15 +106,14 @@ Derivada em: 29/10/2026 · comando aplicado: `npm run compose -- linhas identifi
 | Logo da barra | `src/assets/marca-safe-mine.png` | 841×180, fundo transparente | recortado do logo do site da Safe Mine (8000×2081)                    |
 | Foto do hero  | `src/assets/heroBg.png`          | 1020×721 (card)             | recorte do banner entregue em 29/10 com o mockup                      |
 
-| Asset                    | Arquivo esperado                             | Especificação                 | Status                                                      |
-| ------------------------ | -------------------------------------------- | ----------------------------- | ----------------------------------------------------------- |
-| Small Air                | `src/assets/linhas/linha-1.png`              | PNG 800×600 recortado         | provisória — recorte do mockup                              |
-| Medium Air               | `src/assets/linhas/linha-2.png`              | PNG 800×600 recortado         | provisória — recorte do mockup                              |
-| Large Air                | `src/assets/linhas/linha-3.png`              | PNG 800×600 recortado         | provisória — recorte do mockup                              |
-| Elétricos WEG            | `src/assets/linhas/marcas.png`               | 800×600, fundo branco         | provisória — recorte do mockup                              |
-| Aplicações 1–4           | `src/assets/aplicacoes/aplicacao-{1..4}.png` | 1200×900 (4:3)                | provisórias — recorte do mockup; direito de uso a confirmar |
-| Cenário dos diferenciais | `src/assets/diferenciais/cenario.jpg`        | 1600×900                      | **pendente**                                                |
-| Pessoa dos diferenciais  | `src/assets/diferenciais/pessoa.png`         | 1220×1000, fundo transparente | **pendente**                                                |
+| Asset                 | Arquivo esperado                             | Especificação         | Status                                                      |
+| --------------------- | -------------------------------------------- | --------------------- | ----------------------------------------------------------- |
+| Small Air             | `src/assets/linhas/linha-1.png`              | PNG 800×600 recortado | provisória — recorte do mockup                              |
+| Medium Air            | `src/assets/linhas/linha-2.png`              | PNG 800×600 recortado | provisória — recorte do mockup                              |
+| Large Air             | `src/assets/linhas/linha-3.png`              | PNG 800×600 recortado | provisória — recorte do mockup                              |
+| Elétricos WEG         | `src/assets/linhas/marcas.png`               | 800×600, fundo branco | provisória — recorte do mockup                              |
+| Aplicações 1–4        | `src/assets/aplicacoes/aplicacao-{1..4}.png` | 1200×900 (4:3)        | provisórias — recorte do mockup; direito de uso a confirmar |
+| Foto dos diferenciais | `src/assets/diferenciais/cenario.jpg`        | 1600×900              | provisória — recorte do mockup                              |
 
 As fotos de produto e de aplicação citadas no briefing estão no PPT "Atlas Copco – APE", que não está nesta máquina; a maioria dos recortes ficava abaixo da resolução pedida.
 
@@ -146,6 +145,10 @@ Em 29/10/2026 o topo da página foi refeito a partir do mockup enviado pela B2 (
 
 Se este topo virar padrão, a mudança é no starter (template + `check-lp.mjs`), com versão nova.
 
+### Fotos provisórias e o portão de publicação
+
+As 9 fotos recortadas dos mockups (4 de `linhas`, 4 de `aplicacoes` e `diferenciais/cenario.jpg`) foram registradas em `placeholders.json` como imagens de exemplo, com a anotação "provisória: recorte do mockup". Sem isso, o `npm run verify` passaria inteiro e o próximo push publicaria os recortes na branch `wp-build`, que o plugin do WordPress lê. Com o registro, `check:lp:rascunho` as tolera (os 3 slots seguem em `assets.pendentes`) e o `verify` e o CI as barram. Quando a foto original chegar, ela substitui o arquivo com o mesmo nome e a assinatura deixa de bater — não é preciso mexer na lista.
+
 ### Seção "Linhas por porte"
 
 Também em 29/10/2026, a seção `linhas` passou ao layout do mockup seguinte: cabeçalho em duas colunas com "cada exigência de ar" em verde, 4 cards claros (sem o card escuro da biblioteca) com foto, vazão e pressão lado a lado, motor e botão "Falar com especialista" de largura total, e a faixa "Não sabe qual compressor escolher?" com o CTA `linhas-orientacao`. A partir de 1280 px os cards são subgrid, para título, dados e motor ficarem alinhados; abaixo disso, 2 colunas.
@@ -171,6 +174,14 @@ Também em 29/10/2026, a seção `aplicacoes` passou ao layout do mockup: cabeç
 - O componente `src/components/sections/ApplicationsGallery.astro` foi alterado dentro da LP. **`npm run compose` o sobrescreve com o da biblioteca** — guarde-o antes de recompor.
 - As 4 descrições vieram do mockup, na ficha e nos dados. Campos novos em `aplicacoes.ts`: `titleHighlight`, `cardCta` e `help`.
 - **Fotos provisórias**: as 4 fotos de aplicação foram recortadas do mockup (cerca de 400 px de largura útil, ampliadas para 800×600). O slot `aplicacoes` continua em `assets.pendentes` até chegarem as fotos reais 1200×900, com o direito de uso confirmado.
+
+### Seção "Diferenciais"
+
+Também em 29/10/2026, a seção `diferenciais` passou ao layout do mockup: frase de autoridade com "cada aplicação." em verde, texto, botão "Solicitar cotação" (`diferenciais-cta`) e linha de apoio ao lado de uma foto em card; abaixo, os 5 diferenciais num painel navy com ícones verdes — o bloco navy da segunda metade da página. Sem os cards sobrepostos nem a pessoa recortada do padrão.
+
+- O componente `src/components/sections/WhyBrand.astro` foi alterado dentro da LP. **`npm run compose` o sobrescreve com o da biblioteca** — guarde-o antes de recompor.
+- Texto e 5º diferencial ("Orientação para encontrar a solução para sua operação.") vieram do mockup, na ficha e nos dados; ícones `user` (novo) e `zap`. Campo novo em `diferenciais.ts`: `help`. O campo `person` saiu da ficha e dos dados, e `pessoa.png` foi apagada.
+- **Foto provisória**: `cenario.jpg` é o técnico com tablet ao lado do compressor, recortado do mockup (904 px úteis, ampliado para 1400). O slot `diferenciais` continua em `assets.pendentes` até chegar a foto original.
 
 ## Dados não aplicados
 

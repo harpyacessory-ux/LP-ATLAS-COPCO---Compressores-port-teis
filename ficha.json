@@ -1,6 +1,6 @@
 {
   "ficha": 1,
-  "gerado": "2026-10-29T18:48:24.678Z",
+  "gerado": "2026-10-29T19:04:35.497Z",
   "origem": "docs/FICHA-LP.md",
   "padrao": "2.8.0",
   "cliente": "Safe Mine Soluções",
@@ -304,12 +304,11 @@
       "conteudo": {
         "eyebrow": "Diferenciais Safe Mine",
         "titleLines": ["Ar certo para", "cada aplicação."],
-        "text": "A Safe Mine entende o serviço antes de indicar o compressor, avaliando juntos vazão, pressão, motor e aplicação.",
-        "scene": "Compressor portátil em operação de campo",
-        "person": "Especialista da Safe Mine",
+        "text": "A Safe Mine entende o serviço antes de indicar o compressor, avaliando vazão, pressão, motor e aplicação.",
+        "scene": "Técnico com tablet ao lado de um compressor portátil Atlas Copco",
         "reasons": [
           {
-            "icon": "search",
+            "icon": "user",
             "title": "Atendimento consultivo",
             "description": "Entende a aplicação antes de indicar o compressor."
           },
@@ -319,7 +318,7 @@
             "description": "Fornecimento móvel de ar para serviços de campo."
           },
           {
-            "icon": "power",
+            "icon": "zap",
             "title": "Diesel ou elétrico",
             "description": "Versões a diesel e modelos elétricos com motor WEG."
           },
@@ -331,7 +330,7 @@
           {
             "icon": "clock",
             "title": "Agilidade na identificação",
-            "description": "Resposta rápida aos desafios da operação."
+            "description": "Orientação para encontrar a solução para sua operação."
           }
         ]
       }
