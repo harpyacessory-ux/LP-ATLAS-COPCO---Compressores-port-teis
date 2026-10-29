@@ -100,10 +100,11 @@ Derivada em: 29/10/2026 · comando aplicado: `npm run compose -- linhas identifi
 
 ## Assets
 
-| Asset          | Arquivo esperado        | Especificação               | Status                                                                   |
-| -------------- | ----------------------- | --------------------------- | ------------------------------------------------------------------------ |
-| Logo           | `src/assets/LOGO.png`   | 240×200, fundo transparente | entregue — o mesmo da LP SEIVE (site da Safe Mine); usado no og:image    |
-| Banner do hero | `src/assets/heroBg.png` | 1981×891                    | entregue em 29/10 com o mockup (1870×841, ampliado para 1981 de largura) |
+| Asset         | Arquivo esperado                 | Especificação               | Status                                                                |
+| ------------- | -------------------------------- | --------------------------- | --------------------------------------------------------------------- |
+| Logo          | `src/assets/LOGO.png`            | 240×200, fundo transparente | entregue — o mesmo da LP SEIVE (site da Safe Mine); usado no og:image |
+| Logo da barra | `src/assets/marca-safe-mine.png` | 841×180, fundo transparente | recortado do logo do site da Safe Mine (8000×2081)                    |
+| Foto do hero  | `src/assets/heroBg.png`          | 1020×721 (card)             | recorte do banner entregue em 29/10 com o mockup                      |
 
 | Asset                       | Arquivo esperado                             | Especificação                 | Status                                     |
 | --------------------------- | -------------------------------------------- | ----------------------------- | ------------------------------------------ |
@@ -132,13 +133,15 @@ As fotos de produto e de aplicação citadas no briefing estão no PPT "Atlas Co
 
 ## Desvio de estrutura fixa — Header e Hero
 
-Em 29/10/2026 o topo da página foi refeito a partir do mockup enviado pela B2, no lugar do Header e do Hero do padrão (itens 4.1.1 e 4.1.2):
+Em 29/10/2026 o topo da página foi refeito a partir do mockup enviado pela B2 (segunda versão, tema claro), no lugar do Header e do Hero do padrão (itens 4.1.1 e 4.1.2):
 
-- **Header**: barra flutuante translúcida e fixa, com logo claro (`LOGO-light.png`), tagline central a partir de 1024 px e CTA verde "Solicitar cotação". A placa branca do logo saiu.
-- **Hero**: banner em largura total ancorado à direita, com fundo navy #002146 (a cor do lado esquerdo do banner); H1 no plural; link "Encontrar minha linha" que rola até `#linhas` (`data-cta="hero-secondary"`); bloco "Não sabe a vazão ou a pressão?"; e a faixa "Encontre a linha para a sua aplicação", com um card-CTA por linha (`hero-linha-small-air`, `hero-linha-medium-air`, `hero-linha-large-air`, `hero-linha-eletricos`).
+- **Header**: barra branca flutuante e fixa, com logo colorido (`marca-safe-mine.png`, recortado do logo do site), âncoras "Compressores" (`#linhas`) e "Aplicações" (`#aplicacoes`) e CTA verde "Solicitar cotação". Sem tagline nem placa do logo; o padrão proíbe menu, e o mockup o pede.
+- **Hero**: fundo claro, duas colunas — texto e foto em card arredondado que sangra até 24 px da borda da tela no desktop. H1 no plural com "mineração e perfuração" em verde; link "Encontrar minha linha" que rola até `#linhas` (`data-cta="hero-secondary"`); bloco "Não sabe a vazão ou a pressão?"; faixa "Encontre a linha para a sua aplicação" com um CTA por linha (`hero-linha-small-air`, `hero-linha-medium-air`, `hero-linha-large-air`, `hero-linha-eletricos`).
+- **Foto**: `heroBg.png` é um recorte (1020×721) do banner entregue com o mockup, só com a pedreira e os compressores. O banner inteiro (com o degradê navy) está no commit 2f75761. O `check:lp` avisa que ela não tem 1981×900 — a especificação do banner de tela cheia, que não se aplica ao card.
 - **Sem a coluna de 300 px do chat**: o shortcode do chat continua em `site.ts` e no `index.astro` gerado, mas o Hero não o renderiza. O formulário segue na Cotação.
 - **CTA primário** passa a "Solicitar cotação" em toda a página (era "Solicite sua cotação").
 - **`check:lp`**: as assinaturas de Header e Hero (A8) foram trocadas pelas da estrutura nova, para a verificação continuar valendo.
+- O mockup mostra o compressor XAS "saindo" do card pela base; isso pede um recorte do equipamento com fundo transparente e não foi feito.
 - Os 3 pontos do hero ficam na ficha (o validador exige), mas a página mostra no lugar a faixa das 4 linhas.
 
 Se este topo virar padrão, a mudança é no starter (template + `check-lp.mjs`), com versão nova.

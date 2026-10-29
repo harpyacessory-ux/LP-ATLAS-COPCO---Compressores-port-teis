@@ -47,7 +47,11 @@ export const cta = {
 /* ------------------------------------------------------------------ header */
 
 export const header = {
-  tagline: site.product,
+  /** Âncoras da barra (desvio do padrão, pedido no mockup de 29/10): rolam até as seções. */
+  nav: [
+    { id: 'compressores', label: 'Compressores', href: '#linhas' },
+    { id: 'aplicacoes', label: 'Aplicações', href: '#aplicacoes' },
+  ],
 } as const
 
 /* -------------------------------------------------------------------- hero */
@@ -55,10 +59,15 @@ export const header = {
 export const hero = {
   eyebrow: 'Ar comprimido para operações exigentes',
   title: `${site.product} para ${site.context}`,
+  /** Trecho do H1 em verde. */
+  highlight: 'mineração e perfuração',
   text: 'Modelos a diesel e elétricos para diferentes vazões, pressões e aplicações. A Safe Mine ajuda você a escolher o compressor para o seu serviço.',
   banner: {
     src: heroBg,
     alt: 'Compressores portáteis Atlas Copco em área de mineração',
+    /** Larguras geradas: as mesmas no <Picture> do Hero e no preload do Layout. */
+    widths: [480, 768, 1020],
+    sizes: '(min-width: 1024px) 46vw, 100vw',
   },
   help: {
     title: 'Não sabe a vazão ou a pressão?',
@@ -102,7 +111,8 @@ export const hero = {
   eyebrow: string
   title: string
   text: string
-  banner: Photo
+  highlight: string
+  banner: Photo & { widths: readonly number[]; sizes: string }
   help: { title: string; text: string }
   lines: {
     title: string

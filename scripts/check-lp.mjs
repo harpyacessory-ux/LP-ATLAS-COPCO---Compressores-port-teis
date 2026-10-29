@@ -191,9 +191,9 @@ for (const f of astroFiles) {
 {
   // Header e Hero desta LP seguem o mockup aprovado em 29/10/2026, não a estrutura
   // fixa do padrão (desvio registrado em docs/BRIEFING.md). As assinaturas abaixo
-  // conferem a estrutura nova: barra flutuante, banner em largura total e faixa de linhas.
+  // conferem a estrutura nova: barra branca flutuante, foto em card e faixa de linhas.
   const expect = {
-    'Header.astro': ['fixed inset-x-0 top-0 z-50', 'LOGO-light.png', 'data-cta="header-cta"'],
+    'Header.astro': ['fixed inset-x-0 top-0 z-50', 'marca-safe-mine.png', 'data-cta="header-cta"'],
     'Hero.astro': [
       'fetchpriority="high"',
       'data-cta="hero-primary"',
