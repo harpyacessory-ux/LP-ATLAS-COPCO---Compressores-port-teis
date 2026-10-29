@@ -106,15 +106,15 @@ Derivada em: 29/10/2026 · comando aplicado: `npm run compose -- linhas identifi
 | Logo da barra | `src/assets/marca-safe-mine.png` | 841×180, fundo transparente | recortado do logo do site da Safe Mine (8000×2081)                    |
 | Foto do hero  | `src/assets/heroBg.png`          | 1020×721 (card)             | recorte do banner entregue em 29/10 com o mockup                      |
 
-| Asset                       | Arquivo esperado                             | Especificação                 | Status                                     |
-| --------------------------- | -------------------------------------------- | ----------------------------- | ------------------------------------------ |
-| Small Air                   | `src/assets/linhas/linha-1.png`              | PNG 800×600 recortado         | **pendente**                               |
-| Medium Air                  | `src/assets/linhas/linha-2.png`              | PNG 800×600 recortado         | **pendente**                               |
-| Large Air                   | `src/assets/linhas/linha-3.png`              | PNG 800×600 recortado         | **pendente**                               |
-| Elétricos WEG (card escuro) | `src/assets/linhas/marcas.png`               | 1280×800, fundo branco        | **pendente**                               |
-| Aplicações 1–4              | `src/assets/aplicacoes/aplicacao-{1..4}.png` | 1200×900 (4:3)                | **pendentes** — direito de uso a confirmar |
-| Cenário dos diferenciais    | `src/assets/diferenciais/cenario.jpg`        | 1600×900                      | **pendente**                               |
-| Pessoa dos diferenciais     | `src/assets/diferenciais/pessoa.png`         | 1220×1000, fundo transparente | **pendente**                               |
+| Asset                    | Arquivo esperado                             | Especificação                 | Status                                     |
+| ------------------------ | -------------------------------------------- | ----------------------------- | ------------------------------------------ |
+| Small Air                | `src/assets/linhas/linha-1.png`              | PNG 800×600 recortado         | provisória — recorte do mockup             |
+| Medium Air               | `src/assets/linhas/linha-2.png`              | PNG 800×600 recortado         | provisória — recorte do mockup             |
+| Large Air                | `src/assets/linhas/linha-3.png`              | PNG 800×600 recortado         | provisória — recorte do mockup             |
+| Elétricos WEG            | `src/assets/linhas/marcas.png`               | 800×600, fundo branco         | provisória — recorte do mockup             |
+| Aplicações 1–4           | `src/assets/aplicacoes/aplicacao-{1..4}.png` | 1200×900 (4:3)                | **pendentes** — direito de uso a confirmar |
+| Cenário dos diferenciais | `src/assets/diferenciais/cenario.jpg`        | 1600×900                      | **pendente**                               |
+| Pessoa dos diferenciais  | `src/assets/diferenciais/pessoa.png`         | 1220×1000, fundo transparente | **pendente**                               |
 
 As fotos de produto e de aplicação citadas no briefing estão no PPT "Atlas Copco – APE", que não está nesta máquina; a maioria dos recortes ficava abaixo da resolução pedida.
 
@@ -145,6 +145,15 @@ Em 29/10/2026 o topo da página foi refeito a partir do mockup enviado pela B2 (
 - Os 3 pontos do hero ficam na ficha (o validador exige), mas a página mostra no lugar a faixa das 4 linhas.
 
 Se este topo virar padrão, a mudança é no starter (template + `check-lp.mjs`), com versão nova.
+
+### Seção "Linhas por porte"
+
+Também em 29/10/2026, a seção `linhas` passou ao layout do mockup seguinte: cabeçalho em duas colunas com "cada exigência de ar" em verde, 4 cards claros (sem o card escuro da biblioteca) com foto, vazão e pressão lado a lado, motor e botão "Falar com especialista" de largura total, e a faixa "Não sabe qual compressor escolher?" com o CTA `linhas-orientacao`. A partir de 1280 px os cards são subgrid, para título, dados e motor ficarem alinhados; abaixo disso, 2 colunas.
+
+- O componente `src/components/sections/ProductLines.astro` foi alterado dentro da LP. **`npm run compose` o sobrescreve com o da biblioteca** — guarde-o antes de recompor, ou leve o layout para a biblioteca como seção nova.
+- Os dados seguem o contrato da biblioteca: `dark: true` continua no card elétrico (o contrato exige um), mas o componente não o usa; `features` é posicional (vazão, pressão, motor). Campos novos em `linhas.ts`: `titleHighlight`, `specLabels`, `help`, `note`.
+- As descrições dos cards foram encurtadas como no mockup (sem "Ar móvel para" / "Para"), na ficha e nos dados.
+- **Fotos provisórias**: as 4 fotos de produto foram recortadas do próprio mockup (cerca de 330 px de largura útil, ampliadas para 800×600 com fundo branco). Servem para a revisão; o slot `linhas` continua em `assets.pendentes` até chegarem os originais.
 
 ## Dados não aplicados
 

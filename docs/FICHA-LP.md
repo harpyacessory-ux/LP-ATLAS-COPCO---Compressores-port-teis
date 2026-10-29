@@ -155,21 +155,21 @@ blocos:
       - id: small-air
         tag: Pequeno porte
         title: Small Air
-        description: Ar móvel para sinalização rodoviária, demolição e perfuração manual.
+        description: Sinalização rodoviária, demolição e perfuração manual.
         features: [100 a 190 CFM, 7 a 10 bar, Motor Kubota]
         photo: Compressor portátil Small Air
         dark: false
       - id: medium-air
         tag: Médio porte
         title: Medium Air
-        description: Para jateamento abrasivo, concreto projetado e perfuração de rocha.
+        description: Jateamento abrasivo, concreto projetado e perfuração de rocha.
         features: [272 a 404 CFM, 7 a 14 bar, Motor Perkins]
         photo: Compressor portátil Medium Air
         dark: false
       - id: large-air
         tag: Grande vazão
         title: Large Air
-        description: Para poços artesianos, fundações e geotecnia, com alta vazão e pressão.
+        description: Poços artesianos, fundações e geotecnia, com alta vazão e pressão.
         features: [Até 1.567 CFM, Até 30 bar, Motores MWM e Scania]
         photo: Compressor portátil Large Air
         dark: false
