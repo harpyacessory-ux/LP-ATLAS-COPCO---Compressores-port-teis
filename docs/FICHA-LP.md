@@ -264,24 +264,24 @@ blocos:
     papeis: [Compras, Engenharia]
     eyebrow: Dados para cotação
     title: Não sabe a vazão ou a pressão?
-    microcopy: Basta descrever o serviço
-    text: Descreva o serviço que o compressor vai executar e envie o que tiver. A equipe avalia a aplicação e indica a linha e o modelo adequados.
+    microcopy: Você pode pedir cotação sem os dados técnicos.
+    text: Descreva o serviço. A Safe Mine avalia a aplicação e ajuda a indicar o compressor adequado para a sua operação.
     items:
-      - icon: target
+      - icon: file
         label: Aplicação
-        hint: o serviço em campo
-      - icon: move
-        label: Vazão
-        hint: em CFM, se souber
-      - icon: cylinder
-        label: Pressão
-        hint: em bar, se souber
-      - icon: power
-        label: Acionamento
-        hint: diesel ou elétrico
+        hint: Descreva o serviço que será executado.
       - icon: pin
         label: Cidade/UF
-        hint: local da operação
+        hint: Local da operação
+      - icon: power
+        label: Acionamento
+        hint: Diesel ou elétrico, se tiver preferência
+      - icon: move
+        label: Vazão
+        hint: em CFM
+      - icon: cylinder
+        label: Pressão
+        hint: em bar
       - icon: layers
         label: Linha
         hint: se já tiver preferência

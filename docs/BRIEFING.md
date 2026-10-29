@@ -155,6 +155,15 @@ Também em 29/10/2026, a seção `linhas` passou ao layout do mockup seguinte: c
 - As descrições dos cards foram encurtadas como no mockup (sem "Ar móvel para" / "Para"), na ficha e nos dados.
 - **Fotos provisórias**: as 4 fotos de produto foram recortadas do próprio mockup (cerca de 330 px de largura útil, ampliadas para 800×600 com fundo branco). Servem para a revisão; o slot `linhas` continua em `assets.pendentes` até chegarem os originais.
 
+### Seção "Dados para cotação" (`identificar`)
+
+Também em 29/10/2026, o painel passou ao layout do mockup: card dividido, com bloco navy à esquerda (título, texto, botão "Receber indicação e cotação" com `data-cta="identificar-cta"` e a frase de reforço) e, à direita, "O que ajuda na sua cotação" com os 6 dados em dois grupos — Aplicação em destaque, Cidade/UF e Acionamento; e, sob "Se souber, envie também", Vazão, Pressão e Linha. Lado a lado a partir de 1280 px; abaixo, empilhado. Continua sendo o bloco navy da primeira metade da página.
+
+- O componente `src/components/sections/SupportPanel.astro` foi alterado dentro da LP. **`npm run compose` o sobrescreve com o da biblioteca** — guarde-o antes de recompor.
+- Texto, reforço e itens foram atualizados na ficha e nos dados. O reforço do mockup ("Você pode pedir cotação sem ter os dados técnicos.") tem 50 caracteres e o contrato da seção aceita 48: entrou "Você pode pedir cotação sem os dados técnicos.".
+- Campos novos em `identificar.ts`, fora da ficha: `ctaLabel` e `list` (título, texto, rótulo do grupo opcional e o índice em que ele começa).
+- Ícones `file` e `pin` no lugar de `file-text` e `map-pin`: o validador da ficha só reconhece nomes de ícone sem hífen.
+
 ## Dados não aplicados
 
 Segundo WhatsApp (31) 99710-0350; e-mail, LinkedIn, Instagram e QR code; razão social e CNPJ; controlador PRS / AirXpert; ferramentas e webshop da Atlas Copco; organograma APE; outras linhas da Safe Mine; ano de fundação (2017).
