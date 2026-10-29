@@ -1,0 +1,377 @@
+{
+  "ficha": 1,
+  "gerado": "2026-10-29T14:21:08.093Z",
+  "origem": "docs/FICHA-LP.md",
+  "padrao": "2.8.0",
+  "cliente": "Safe Mine Soluções",
+  "produto": "Compressores portáteis Atlas Copco",
+  "composicao": ["linhas", "identificar", "aplicacoes", "diferenciais"],
+  "site": {
+    "brand": "Safe Mine Soluções",
+    "brandShort": "Safe Mine",
+    "product": "Compressor portátil Atlas Copco",
+    "context": "obras, mineração e perfuração",
+    "url": "https://lp-atlas-copco-compressores-portateis.vercel.app/",
+    "address": "Rua José de Paula Filho, 128 - Europa, Contagem - MG, 32043-050",
+    "privacyUrl": "",
+    "whatsapp": "5531995538843",
+    "shortcodes": {
+      "chat": "[atendimento_chat id=\"default\"]",
+      "form": "[atendimento_form id=\"default-form\"]"
+    }
+  },
+  "campanha": {
+    "negatives": [
+      "compressor de geladeira",
+      "compressor de ar condicionado",
+      "mini compressor pneu",
+      "inflador portátil",
+      "compressor para aerógrafo",
+      "compressor odontológico",
+      "compressor doméstico",
+      "compressor de áudio",
+      "ferramentas pneumáticas",
+      "bateria para compressor"
+    ],
+    "forbidden": [
+      "somos fabricantes",
+      "fabricamos",
+      "nossa fábrica",
+      "filial",
+      "site oficial",
+      "loja oficial",
+      "canal oficial",
+      "locação de compressores",
+      "aluguel de compressores",
+      "alugamos",
+      "locamos",
+      "manutenção de compressores",
+      "serviço de manutenção",
+      "todo o Brasil",
+      "todo o país",
+      "todo o território nacional",
+      "atendimento nacional",
+      "cobertura nacional",
+      "líder",
+      "o melhor",
+      "a melhor",
+      "número 1",
+      "nº 1",
+      "maior distribuidor",
+      "maior distribuidora",
+      "distribuidor autorizado",
+      "distribuidora autorizada",
+      "autorizado",
+      "autorizada",
+      "representamos",
+      "representante"
+    ],
+    "mainKeyword": "compressor portátil atlas copco",
+    "areaAtendida": null,
+    "onde": null,
+    "familias": [
+      {
+        "nome": "produto-categoria",
+        "termos": [
+          "compressor de ar portátil industrial",
+          "compressor de ar elétrico portátil industrial",
+          "compressor a diesel industrial",
+          "compressor de ar a diesel",
+          "compressor a diesel"
+        ],
+        "responde": "linhas"
+      },
+      {
+        "nome": "marca",
+        "termos": [
+          "compressor portátil atlas copco",
+          "compressor atlas copco diesel",
+          "compressor a diesel atlas copco"
+        ],
+        "responde": "linhas"
+      },
+      {
+        "nome": "grande-vazao",
+        "termos": ["compressor de grande vazão"],
+        "responde": "linhas"
+      },
+      {
+        "nome": "aplicacao",
+        "termos": ["compressor para perfuração", "compressor para jateamento"],
+        "responde": "aplicacoes"
+      },
+      {
+        "nome": "setor",
+        "termos": ["compressor para mineração"],
+        "responde": "aplicacoes"
+      },
+      {
+        "nome": "cotacao",
+        "termos": ["cotação compressor atlas copco"],
+        "responde": "identificar"
+      }
+    ]
+  },
+  "publico": ["Manutenção", "Operações", "Engenharia", "Compras"],
+  "marcas": {
+    "usarLogos": false,
+    "nomes": ["Atlas Copco"],
+    "autorizacao": "uso da logo da Atlas Copco não autorizado por escrito; o planejamento libera a marca apenas conforme autorizações e manuais aplicáveis"
+  },
+  "tokens": {
+    "padrao": false,
+    "cores": {
+      "primaria": "#102c73",
+      "marca": "#163b99",
+      "acao": "#4d7f22",
+      "verde-marca": "#7ba249"
+    }
+  },
+  "conteudo": {
+    "title": "Compressor portátil Atlas Copco para obras e mineração | Safe Mine",
+    "description": "Compressores portáteis Atlas Copco a diesel e elétricos WEG, de 100 a 1.567 CFM, para perfuração, jateamento e obras, com atendimento consultivo.",
+    "hero": {
+      "eyebrow": "Ar comprimido portátil",
+      "title": "Compressor portátil Atlas Copco para obras, mineração e perfuração",
+      "text": "Linhas Small, Medium e Large Air a diesel e modelos elétricos WEG, com atendimento consultivo para indicar o compressor certo para o seu serviço.",
+      "points": [
+        {
+          "icon": "power",
+          "line1": "Versões a diesel",
+          "line2": "e elétricas WEG"
+        },
+        {
+          "icon": "gear",
+          "line1": "De 100 a 1.567 CFM",
+          "line2": "e até 30 bar"
+        },
+        {
+          "icon": "mountain",
+          "line1": "Para perfuração,",
+          "line2": "jateamento e obras"
+        }
+      ]
+    },
+    "quote": {
+      "eyebrow": "Solicite sua cotação",
+      "title": "Fale com quem entende de compressores portáteis.",
+      "text": "Descreva o serviço e a equipe indica a linha Atlas Copco adequada à sua operação. Preencha o formulário ou fale direto conosco pelo WhatsApp.",
+      "trust": [
+        {
+          "icon": "users",
+          "label": "Atendimento consultivo"
+        },
+        {
+          "icon": "clock",
+          "label": "Resposta rápida"
+        },
+        {
+          "icon": "file",
+          "label": "Cotação pela descrição do serviço"
+        }
+      ],
+      "lgpd": "Seus dados serão usados apenas para responder à sua solicitação de cotação, conforme a LGPD."
+    }
+  },
+  "secoes": {
+    "linhas": {
+      "dataExport": "productLines",
+      "data": "linhas.ts",
+      "conteudo": {
+        "eyebrow": "Linhas por porte",
+        "title": "Compressores portáteis para cada exigência de ar",
+        "text": "Escolha pela aplicação. Cada porte combina vazão, pressão e motor para um tipo de serviço em campo.",
+        "items": [
+          {
+            "id": "small-air",
+            "tag": "Pequeno porte",
+            "title": "Small Air",
+            "description": "Ar móvel para sinalização rodoviária, demolição e perfuração manual.",
+            "features": ["100 a 190 CFM", "7 a 10 bar", "Motor Kubota"],
+            "photo": "Compressor portátil Small Air",
+            "dark": false
+          },
+          {
+            "id": "medium-air",
+            "tag": "Médio porte",
+            "title": "Medium Air",
+            "description": "Para jateamento abrasivo, concreto projetado e perfuração de rocha.",
+            "features": ["272 a 404 CFM", "7 a 14 bar", "Motor Perkins"],
+            "photo": "Compressor portátil Medium Air",
+            "dark": false
+          },
+          {
+            "id": "large-air",
+            "tag": "Grande vazão",
+            "title": "Large Air",
+            "description": "Para poços artesianos, fundações e geotecnia, com alta vazão e pressão.",
+            "features": ["Até 1.567 CFM", "Até 30 bar", "Motores MWM e Scania"],
+            "photo": "Compressor portátil Large Air",
+            "dark": false
+          },
+          {
+            "id": "eletricos",
+            "tag": "Elétrico",
+            "title": "Elétricos WEG",
+            "description": "Modelos T400 a V1100 com motor WEG e acionamento elétrico.",
+            "features": ["403 a 1.100 CFM", "10 bar", "Motor elétrico WEG"],
+            "photo": "Compressor portátil elétrico com motor WEG",
+            "dark": true
+          }
+        ]
+      }
+    },
+    "identificar": {
+      "dataExport": "supportPanel",
+      "data": "identificar.ts",
+      "conteudo": {
+        "eyebrow": "Dados para cotação",
+        "title": "Não sabe a vazão ou a pressão?",
+        "microcopy": "Basta descrever o serviço",
+        "text": "Descreva o serviço que o compressor vai executar e envie o que tiver. A equipe avalia a aplicação e indica a linha e o modelo adequados.",
+        "items": [
+          {
+            "icon": "target",
+            "label": "Aplicação",
+            "hint": "o serviço em campo"
+          },
+          {
+            "icon": "move",
+            "label": "Vazão",
+            "hint": "em CFM, se souber"
+          },
+          {
+            "icon": "cylinder",
+            "label": "Pressão",
+            "hint": "em bar, se souber"
+          },
+          {
+            "icon": "power",
+            "label": "Acionamento",
+            "hint": "diesel ou elétrico"
+          },
+          {
+            "icon": "pin",
+            "label": "Cidade/UF",
+            "hint": "local da operação"
+          },
+          {
+            "icon": "layers",
+            "label": "Linha",
+            "hint": "se já tiver preferência"
+          }
+        ]
+      }
+    },
+    "aplicacoes": {
+      "dataExport": "applications",
+      "data": "aplicacoes.ts",
+      "conteudo": {
+        "eyebrow": "Aplicações",
+        "title": "Ar comprimido para cada serviço de campo",
+        "text": "Perfuração, jateamento, poços e fundações pedem combinações diferentes de vazão e pressão. Escolha a aplicação e fale com a equipe.",
+        "items": [
+          {
+            "id": "desmonte-de-rocha",
+            "label": "Desmonte de rocha",
+            "description": "Aciona perfuratrizes em rochas, pedras ornamentais, obras e mineração.",
+            "photo": "Perfuração de rocha para desmonte"
+          },
+          {
+            "id": "jateamento",
+            "label": "Jateamento abrasivo",
+            "description": "Acelera o abrasivo para remover corrosão, tinta e contaminantes.",
+            "photo": "Jateamento abrasivo em superfície metálica"
+          },
+          {
+            "id": "pocos-artesianos",
+            "label": "Poços artesianos",
+            "description": "Aciona o martelo de fundo e limpa o furo até a captação de água.",
+            "photo": "Perfuração de poço artesiano"
+          },
+          {
+            "id": "fundacoes",
+            "label": "Fundações",
+            "description": "Avança a ferramenta e limpa o furo para estacas e ancoragens.",
+            "photo": "Perfuração para fundações e estacas"
+          }
+        ]
+      }
+    },
+    "diferenciais": {
+      "dataExport": "why",
+      "data": "diferenciais.ts",
+      "conteudo": {
+        "eyebrow": "Diferenciais Safe Mine",
+        "titleLines": ["Ar certo para", "cada aplicação."],
+        "text": "A Safe Mine entende o serviço antes de indicar o compressor, avaliando juntos vazão, pressão, motor e aplicação.",
+        "scene": "Compressor portátil em operação de campo",
+        "person": "Especialista da Safe Mine",
+        "reasons": [
+          {
+            "icon": "search",
+            "title": "Atendimento consultivo",
+            "description": "Entende a aplicação antes de indicar o compressor."
+          },
+          {
+            "icon": "truck",
+            "title": "Mobilidade em campo",
+            "description": "Fornecimento móvel de ar para serviços de campo."
+          },
+          {
+            "icon": "power",
+            "title": "Diesel ou elétrico",
+            "description": "Versões a diesel e modelos elétricos com motor WEG."
+          },
+          {
+            "icon": "layers",
+            "title": "Portfólio por porte",
+            "description": "Small, Medium e Large Air, de 100 a 1.567 CFM."
+          },
+          {
+            "icon": "clock",
+            "title": "Agilidade na identificação",
+            "description": "Resposta rápida aos desafios da operação."
+          }
+        ]
+      }
+    }
+  },
+  "assets": {
+    "pendentes": ["heroBg", "linhas", "aplicacoes", "diferenciais"]
+  },
+  "fora": {
+    "especificacoes": {
+      "veredicto": "quase",
+      "falta": "confirmar W1000 x W1100 na linha Large Air (os slides da Atlas Copco divergem) e o porte da X-AIR (Medium Air no material da fabricante, Large Low no portfólio consolidado)"
+    },
+    "vitrine": {
+      "veredicto": "insuficiente",
+      "falta": "não há foto por modelo nem descrição por item; os modelos se distinguem por número, e quem responde a isso é a tabela técnica"
+    },
+    "processo": {
+      "veredicto": "insuficiente",
+      "falta": "o plano de conteúdo traz só 3 etapas genéricas, sem responsável nem prazo; pedir ao comercial o processo real de atendimento"
+    },
+    "situacoes": {
+      "veredicto": "insuficiente",
+      "falta": "a compra é planejada e o comercial não listou os gatilhos de contato mais comuns"
+    },
+    "segmentos": {
+      "veredicto": "insuficiente",
+      "falta": "há 6 setores com processos dispersos e o 7º (locadoras) sem processos; a seção pede 7 setores com descrição e 3 equipamentos cada"
+    },
+    "clientes": {
+      "veredicto": "insuficiente",
+      "falta": "nenhum logo de cliente autorizado e nenhum número institucional além do ano de fundação"
+    },
+    "perguntas": {
+      "veredicto": "quase",
+      "falta": "validar as respostas com o comercial e acrescentar prazo de entrega, disponibilidade de modelos e região atendida"
+    },
+    "escopo": {
+      "veredicto": "nao-se-aplica",
+      "falta": "a oferta é uma linha de equipamentos, não a consolidação de compras de itens diferentes"
+    }
+  }
+}
